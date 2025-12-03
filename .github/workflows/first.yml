@@ -1,12 +1,12 @@
 name: First CICD pipeline
 on:
   push:
-    branches: [main]   
+     branches: [main]
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-     - name: Checkout Repo
-       uses: actions/checkout@3
-     - name: Run a simple script
-       run: echo "Hello Bindu, Fisrt CICD ran on Github actions"
+     runs-on: ubuntu-latest
+  steps:
+     - name: Checkout code
+       uses: actions/checkout@v3
+     - name: Run script
+       run: echo "Hello Bindu, your first Github actions ran successfully"
