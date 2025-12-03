@@ -1,11 +1,11 @@
 name: First CICD pipeline
 on:
   push:
-    branches: main
+    branches: [main]   
 jobs:
   build:
     runs-on: ubuntu_latest
-  steps:
+    steps:
      - name: Checkout Repo
        uses: actions/checkout@3
      - name: Run a simple script
